@@ -129,3 +129,5 @@ Tomcat 자체가 원래는 실제 서비스의 용도보다는 Servlet/JSP 기�
 
 Spring 이 존재함으로써, 비싼 Java EE 서버를 구매할 필요도 없었고 EJB 가 제공하던 모든 기능을 쓸 수 있을뿐더러 더이상 굳이 Java EE 를 공부 할 필요가 없게 되었음.
 
+\[참조\] [https://okky.kr/article/415474](https://okky.kr/article/415474)
+
