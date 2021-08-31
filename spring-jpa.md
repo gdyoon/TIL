@@ -2,9 +2,17 @@
 
 자바에는 ORM 이라는 개념이 있다. 관계형 데이터베이스를 사용하기 위한 방법으로 객체 자체가 테이블이 되는 것. 즉 엔티티가 되도록 맵핑시켜주는 프레임워크다.
 
-JPA 는 자바에서 다루는 객체와 RDB 의 견해 차이를 좁히기 위해 만들어졌으며, ORM\(Object Relational Mapping\) 기술에 대한 API 명세이다. JPA 를 그대로 쓸 수도 있고 JPA 인터페이스의 구현체인 Hibernate / OpenJPA 와 같은  패키지를 쓸 수도 있다.
+JPA 는 자바에서 다루는 객체와 RDB 의 견해 차이를 좁히기 위해 만들어졌으며, ORM\(Object Relational Mapping\) 기술에 대한 API 명세이다. JPA 를 그대로 쓸 수도 있고 JPA 인터페이스의 구현체인 Hibernate / OpenJPA 와 같은  패키지를 쓸 수도 있다. \(Hibernate 가 가장 많이 쓰임\)
 
 JPA 는 자바에서 RDB 를 어떻게 써야 할지 정의한 방식이지 라이브러리가 아님을 명심해야 한다. JPA 를 사용하게 되면 SQL 을 직접 사용하는 것이 아니기 때문에, 자바 패러다임에 맞게 객체 중심적 개발이 가능하고, SQL 을 수정 할 필요가 없게 되므로 생산성이 높아진다.
+
+JPA 에서 가장 중요한 개념은 영속성 컨텍스트이며, Entity 를 저장하는 공간을 의미한다. Entity 는 하나의 테이블이라고 보면 된다. DB에 반영되기 전에 캐시의 역할이며, 영속성 공간에 저장해놓고 DB에 최종 반영하게 됨.
+
+* persist\(\) : 영속성 컨텍스트에 저장하는 것. DB에 저장하는 행위가 아님.
+
+EntityManager 는 트랜잭션 단위로 사용하고 끝나면 지워짐. EntityManager 는 EntityManagerFactory 에 의해 생성되고 이는 웹애플리케이션이 초기화될 때 생성된다.
+
+
 
 ### Sprig Data JPA
 
