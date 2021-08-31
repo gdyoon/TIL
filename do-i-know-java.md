@@ -84,6 +84,8 @@ Bean 객체를 생성 및 관리하는 기능 제공하며, 클라이언트가 �
 
 종속성을 주입\(Dependency Injection\) 하는 행위로 Spring Container 가 Bean 을 만들 때, 종속되는 위치나 인스턴스 제어를 위해 주입을 결정하게 됨. 개발자가 결정하는 것이 아닌 프로그램이 결정하기 때문에 이를 제어의 역전이라고 한다.
 
+IOC \(Inversion Of Control\) 는 Hollywood Principle 이라는 이름으로 GoF 의 디자인패턴에 소개된바 있다. Hollywood 에서 관례로 내려오는 표현인데, "Don't call us, we'll call you" \(우리가 연락할테니 연락하지 마쇼\) 이는 프로그래밍에서 "내가 필요할 때, 불러주면, 요청 사항에 맞춰서 행동하겠다" 라는 것이다. 이와 비슷한 예로 JavaScript 의 Callback 이 있다. 함수를 호출할 땐 개발자가 제어 했지만, 콜백을 기다리는 입장에서 제어의 흐름이 역전됐기 때문.
+
 #### ApplicationContext
 
 모든 유형의 객체를 관리하며, Spring IoC 컨테이너를 이해하는데 핵심 요소. configuration metadata 에 Bean 생성의 정의가 있으며, ApplicationContext 가 이를 제어할 수 있음. 가령 아래와 같이 표현할 수 있다. \(Java Reflection 개념\)
