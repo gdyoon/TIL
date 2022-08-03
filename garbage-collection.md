@@ -19,4 +19,4 @@
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MgGxZgz98WrC5\_MZn0S%2Fuploads%2FlwOfewZdUqZkuQQP980D%2Fimage.png?alt=media\&token=a31675ee-48bc-4cff-a680-13c048d940bc)
 
-![](.gitbook/assets/image.png)
+![](<.gitbook/assets/image (5).png>)
